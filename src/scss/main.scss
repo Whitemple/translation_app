@@ -1,0 +1,140 @@
+// datalist {
+//   position: absolute;
+//   max-height: 20em;
+//   border: 0 none;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+
+// datalist option {
+//   font-size: 0.8em;
+//   padding: 0.3em 1em;
+//   background-color: #ccc;
+//   cursor: pointer;
+// }
+
+// /* option active styles */
+// datalist option:hover, datalist option:focus {
+//   color: #fff;
+//   background-color: #036;
+//   outline: 0 none;
+// }
+
+  
+
+
+
+// CODE
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+}
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  
+}
+.header {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.header__labelBlock {
+}
+.header__icon {
+}
+.header__title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 10px;
+}
+.main {
+  width: 90%;
+  margin: 0 auto;
+  &__h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__translation{
+    padding: 15px;
+    list-style:decimal;
+  }
+}
+.form__AreaContainer{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.form__TextAreaContainer:nth-child(3){
+  align-items: flex-end;
+}
+.form__textArea {
+  background-color: #fbfbef;
+  height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+}
+.form__TextAreaContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.languagesInput {
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+input[list="test"]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+.form__changeLangeage{
+  height: 30px;
+  width: 35px;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  background-image: url('./img/loop-arrows.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.form__translateButton{
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.translateButton__icon{
+  height: 30px;
+}
+.form__buttonsPanel{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.languagesDataList {
+  outline: none;
+}
+.footer {
+}
