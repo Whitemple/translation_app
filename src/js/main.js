@@ -71,7 +71,6 @@ async function translaetText(inputValue, inputLang, outputlang, outputValue) {
         const response = await request.json();
         const data = await response;
         doWithOutputValue(outputValue, '');
-        console.log(data)
         if(data.matches.length>0){
             createTranslatedList(data.matches, outputValue, 'translation');
         } else {
