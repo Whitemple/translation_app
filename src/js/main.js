@@ -1,14 +1,14 @@
 import languages from "./languages";
 
-let text = 'Example';
 const API_KEY = '7fe6f4ef4cffefe74e9f';
-const main = document.querySelector('.main');
+const translateButton__icon = document.querySelector('.translateButton__icon');
 const form__leftTextArea = document.querySelector('#form__leftTextArea');
 const main__translation = document.querySelector('.main__translation');
 const form__changeLangeage = document.querySelector('.form__changeLangeage');
 const languagesInputIn = document.querySelector('#languagesInputIn');
 const languagesInputOut = document.querySelector('#languagesInputOut');
 const form__translateButton = document.querySelector('.form__translateButton');
+
 
 languagesInputIn.append(createDataList(languages, 'languagesInputDataList'));
 languagesInputOut.append(createDataList(languages, 'languagesOutDataList'));

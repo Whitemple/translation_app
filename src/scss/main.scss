@@ -1,3 +1,5 @@
+$mainColor: #f5f5dc;
+$desktopWidth: 745px;
 *{
   padding: 0;
   margin: 0;
@@ -6,13 +8,16 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: beige;
+  background-color: $mainColor;
   font-family: 'Freeride';
 }
 .container {
-  max-width: 60%;
+  max-width: 85%;
   margin: 0 auto;
   height: 100vh;
+  @media screen and (min-width: $desktopWidth){
+    max-width: 75%;
+  }
   
 }
 .header {
@@ -44,6 +49,7 @@
     display: flex;
     margin-bottom: 20px;
     flex-direction: column;
+    
   }
   &__TextAreaContainer:nth-child(3){
     align-items: flex-end;
@@ -66,13 +72,16 @@
   &__changeLangeage{
     height: 30px;
     width: 35px;
-    align-self: flex-end;
+    align-self: center;
     background-color: transparent;
     border: none;
     background-image: url('./img/loop-arrows.png');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    @media screen and (min-width: $desktopWidth){
+      align-self: flex-end;
+    }
   }
   &__translateButton{
     padding: 0 5px;
@@ -83,12 +92,20 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: center;
   }
   &__buttonsPanel{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    
+    @media screen and (min-width: $desktopWidth){
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 
 }
